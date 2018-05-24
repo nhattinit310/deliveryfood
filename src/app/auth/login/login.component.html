@@ -1,0 +1,55 @@
+<div class="breadcrumb">
+  <div class="container">
+     <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Search results</a></li>
+        <li>Profile</li>
+     </ul>
+  </div>
+</div>
+<section class="contact-page inner-page">
+  <div class="container">
+     <div class="row">
+        <!-- Login -->
+        <div class="col-md-4 offset-md-4 login-box">
+           <div class="widget">
+              <div class="widget-body">
+                 <form (ngSubmit) = "onSubmit();" #loginForm="ngForm">
+                   <h3 style="text-align: center">Login</h3>
+                    <div class="row">
+                       <div class="form-group col-md-12">
+                          <label for="email">Email</label>
+                          <input class="form-control" type="email" id="email" ngModel  name="email" required email="true">
+                          <div *ngIf ="loginForm.controls.email?.errors?.required && submited == true"
+                              class="alert alert-danger">
+                            Email is required
+                          </div>
+                      
+                       </div>
+                       <div class="form-group col-md-12">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="password" id="password" ngModel name="password"> 
+                        <div *ngIf ="loginForm.controls.password?.errors?.required && submited == true"
+                              class="alert alert-danger">
+                            Password is required
+                          </div>
+                      
+                     </div>
+              
+                
+                    </div>
+                    <div class="row">
+                       <div class="form-group col-md-12">
+                      
+                          <button (click) = "onSubmit();" class="form-control btn theme-btn">Login</button>
+                       </div>
+                    </div>
+                 </form>
+              </div>
+              <!-- end: Widget -->
+           </div>
+           <!-- /REGISTER -->
+        </div>
+     </div>
+  </div>
+</section>
