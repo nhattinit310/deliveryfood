@@ -163,7 +163,7 @@ hr {
 }
 
 .custom-control-input:disabled~.custom-control-description {
-    color: #76767
+    color: #767677
 }
 
 .custom-control {
@@ -282,19 +282,19 @@ hr {
 }
 
 .b-l {
-    border-left: 1px solid #edeed
+    border-left: 1px solid #edeedd
 }
 
 .b-r {
-    border-left: 1px solid #edeed
+    border-left: 1px solid #edeedd
 }
 
 .b-t {
-    border-top: 1px solid #edeed
+    border-top: 1px solid #edeedd
 }
 
 .b-b {
-    border-bottom: 1px solid #edeed
+    border-bottom: 1px solid #edeedd
 }
 
 .b-b-0 {
@@ -922,7 +922,7 @@ hr {
 }
 
 .cart-addon .food-item h6 {
-    /* margin: 0 0 2px 0; */
+    margin: 0 0 2px 0;
 }
 
 .cart-addon .food-item h6 a {
@@ -949,7 +949,6 @@ button.close {
     cursor: pointer;
     background: 0 0;
     border: 0;
-    -webkit-appearance: none;
     right: -15px;
     position: absolute;
     top: -15px;
@@ -1187,7 +1186,7 @@ Steps
 
 @media (min-width: 320px) and (max-width: 543px) {
     .restaurant-wrap {
-        /* text-align:center */
+        text-align:center
     }
     .featured-restaurants .restaurant-logo img {
         width: 85px;
@@ -1224,7 +1223,7 @@ Steps
     color: #f30;
 }
 
-.featured-restaurants .ratings .fa-star-o {}
+
 
 .restaurants-filter ul li {
     display: inline-block;
@@ -1566,8 +1565,6 @@ footer li a {
     line-height: 31px;
     color: #fff;
 }
-
-.profile .right-text {}
 
 .profile-img {
     width: 24.7%;
@@ -2137,7 +2134,7 @@ a[aria-expanded=false] .fa-angle-down {
     height: 28px;
     margin: 0 10px 10px 0;
     padding: 0 20px 0 15px;
-    -webkit-transition: all .4s;
+   
     border: 1px solid #eaebeb;
     border-radius: 2px;
     background: #ffffff;
@@ -2147,7 +2144,7 @@ a[aria-expanded=false] .fa-angle-down {
 
 .tag:after,
 .tag:before {
-    -webkit-transition: all .4s;
+    
     background: #fff
 }
 
@@ -2284,7 +2281,7 @@ a[aria-expanded=false] .fa-angle-down {
     width: 43%;
     display: inline-block;
     overflow: hidden;
-    float: left;
+    
     position: fixed;
     z-index: 10;
 }

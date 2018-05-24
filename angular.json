@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [   
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/bootstrap.min.css",
               "src/assets/css/font-awesome.min.css",
               "src/assets/css/animate.css",
               "src/assets/css/animsition.min.css",
@@ -32,8 +32,8 @@
             "scripts": [  
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/js/tether.min.js",
+              "src/assets/js/bootstrap.min.js",
               "src/assets/js/animsition.min.js",
               "src/assets/js/bootstrap-slider.min.js",
               "src/assets/js/jquery.isotope.min.js",

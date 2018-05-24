@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import {AuthRoutingModule} from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SignupComponent } from './signup/signup.component';
   ],
   declarations: [
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ForgotpasswordComponent
    
   ],
   exports: [
