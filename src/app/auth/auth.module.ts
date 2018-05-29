@@ -32,6 +32,9 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
     RouterModule,
     AuthRoutingModule
   
+  ],
+  providers: [
+    HttpClientModule
   ]
 })
 export class AuthModule {}

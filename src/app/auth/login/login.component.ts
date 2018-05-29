@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-
+import { Observable, Subject, ReplaySubject, from, of, range } from 'rxjs';
+import { Data} from '../../data';
+import { DataService } from '../../data.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,7 +10,9 @@ import { Http } from '@angular/http';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private http: Http) {
+  dt = {};
+
+  constructor(private firstHttp: DataService) {
 
    }
 
@@ -17,15 +21,11 @@ export class LoginComponent implements OnInit {
   }
   submited = false;
   onSubmit(){
-    this.submited = true;
-    const url = "http://localhost:3000/";
-   
-      headers = new Headers({
-        'Content-Type':  'application/json',
-        'Authorization': 'my-auth-token'});
-   
-    const body = JSON.stringify({"name": "Tin"});
-    this.http.post(url,body,{httpOptions}).pipe();
+        this.firstHttp.getdata().subscribe(data => {
+      this.dt = data;
+      console.log(this.dt);
+    })
   }
-
+ 
+  
 }
